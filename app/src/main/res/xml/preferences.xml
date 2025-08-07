@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <PreferenceCategory 
+        android:title="@string/pref_detection_settings"
+        android:iconSpaceReserved="false">
+        
+        <SeekBarPreference
+            android:key="confidence_threshold"
+            android:title="@string/pref_confidence_threshold"
+            android:summary="@string/pref_confidence_threshold_summary"
+            android:max="90"
+            android:min="10"
+            android:defaultValue="50"
+            app:showSeekBarValue="true"
+            android:iconSpaceReserved="false" />
+            
+        <SwitchPreference
+            android:key="show_landmarks"
+            android:title="@string/pref_show_landmarks"
+            android:summary="@string/pref_show_landmarks_summary"
+            android:defaultValue="true"
+            android:iconSpaceReserved="false" />
+            
+        <SwitchPreference
+            android:key="use_gpu"
+            android:title="@string/pref_use_gpu"
+            android:summary="@string/pref_use_gpu_summary"
+            android:defaultValue="true"
+            android:iconSpaceReserved="false" />
+            
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="@string/pref_camera_settings"
+        android:iconSpaceReserved="false">
+        
+        <ListPreference
+            android:key="camera_resolution"
+            android:title="@string/pref_camera_resolution"
+            android:entries="@array/resolution_entries"
+            android:entryValues="@array/resolution_values"
+            android:defaultValue="640x480"
+            android:iconSpaceReserved="false" />
+            
+        <SwitchPreference
+            android:key="auto_focus"
+            android:title="Auto Focus"
+            android:summary="Enable automatic focus adjustment"
+            android:defaultValue="true"
+            android:iconSpaceReserved="false" />
+            
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="Performance"
+        android:iconSpaceReserved="false">
+        
+        <ListPreference
+            android:key="target_fps"
+            android:title="Target FPS"
+            android:summary="Maximum frames per second for processing"
+            android:entries="@array/fps_entries"
+            android:entryValues="@array/fps_values"
+            android:defaultValue="30"
+            android:iconSpaceReserved="false" />
+            
+        <SwitchPreference
+            android:key="show_performance_info"
+            android:title="Show Performance Info"
+            android:summary="Display FPS and processing time"
+            android:defaultValue="true"
+            android:iconSpaceReserved="false" />
+            
+    </PreferenceCategory>
+    
+</PreferenceScreen>

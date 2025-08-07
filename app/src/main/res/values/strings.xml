@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Face Detection</string>
+    <string name="settings">Settings</string>
+    <string name="switch_camera">Switch Camera</string>
+    <string name="fps_counter">FPS: %1$.1f</string>
+    <string name="faces_detected">Faces: %1$d</string>
+    <string name="camera_permission_required">Camera permission is required for face detection</string>
+    <string name="camera_initialization_failed">Camera initialization failed</string>
+    <string name="model_loading_failed">Failed to load face detection model</string>
+
+    <!-- Settings strings -->
+    <string name="pref_detection_settings">Detection Settings</string>
+    <string name="pref_confidence_threshold">Confidence Threshold</string>
+    <string name="pref_confidence_threshold_summary">Minimum confidence for face detection</string>
+    <string name="pref_show_landmarks">Show Landmarks</string>
+    <string name="pref_show_landmarks_summary">Display facial landmarks</string>
+    <string name="pref_use_gpu">Use GPU Acceleration</string>
+    <string name="pref_use_gpu_summary">Enable GPU delegate for faster processing</string>
+
+    <string name="pref_camera_settings">Camera Settings</string>
+    <string name="pref_camera_resolution">Camera Resolution</string>
+
+    <!-- Resolution options -->
+    <string-array name="resolution_entries">
+        <item>640x480</item>
+        <item>1280x720</item>
+        <item>1920x1080</item>
+    </string-array>
+
+    <string-array name="resolution_values">
+        <item>640x480</item>
+        <item>1280x720</item>
+        <item>1920x1080</item>
+    </string-array>
+
+    <!-- FPS options -->
+    <string-array name="fps_entries">
+        <item>15 FPS</item>
+        <item>24 FPS</item>
+        <item>30 FPS</item>
+    </string-array>
+
+    <string-array name="fps_values">
+        <item>15</item>
+        <item>24</item>
+        <item>30</item>
+    </string-array>
+</resources>
