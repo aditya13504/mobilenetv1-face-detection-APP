@@ -43,7 +43,7 @@ A cross-platform face detection application built with Kotlin and Java, leveragi
 3. Point the camera at a face; detected faces will be highlighted in real-time.
 
 ### Project Structure
-
+```
 mobilenetv1-face-detection-APP/
 ├── app/
 │   ├── src/
@@ -56,7 +56,7 @@ mobilenetv1-face-detection-APP/
 │   └── build.gradle
 ├── build.gradle
 └── README.md
-
+```
 ---
 ### Dependencies
 1. TensorFlow Lite
